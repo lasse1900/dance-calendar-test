@@ -1,0 +1,9 @@
+POST http://localhost:3003/api/schools/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNpbW8iLCJpZCI6IjVlMjljYWQ3NTE5ZTYzMTUwYmU3ZGRhMCIsImlhdCI6MTU3OTc5ODk0OH0.NKgICTb6OJpXIRqcggbcZaWUci-vUP_Xd2WHn1UMWUc
+
+{
+	"title": "Maija",
+	"author": "simo",
+	"url": "http://maija.fi"
+}
