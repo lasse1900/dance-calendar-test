@@ -30,7 +30,8 @@ import School from './components/School'
 import Video from './components/Video'
 import { Container } from 'semantic-ui-react'
 import NotFoundPage from './components/NotFoundPage'
-import { getCurrentDate } from './utils/currentDate'
+import '../src/styles/navbar.css'
+// import { getCurrentDate } from './utils/currentDate'
 
 const App = ({
   user,
@@ -139,11 +140,9 @@ const App = ({
           <NavLink to="/schools" data-cy="schools" className="Nav_link" activeClassName="activeRoute" activeStyle={{ color: 'red' }} > schools{'  '} </NavLink>
           <NavLink to="/videos" data-cy="vidoes" className="Nav_link" activeClassName="activeRoute" activeStyle={{ color: 'red' }} > videos{'  '} </NavLink>
           <NavLink to="/calendars" data-cy="calendars" className="Nav_link" activeClassName="activeRoute" activeStyle={{ color: 'red' }} > calendars{'  '} </NavLink>
-          {' <'}{user.username}> logged in {' - '}Date: {getCurrentDate()}
           <button className="ui right floated mini button" data-cy="logout" onClick={handleLogout}>logout</button>
-  
-          
         </div>
+
         <Notification />
         <Switch>
           <Route exact path="/ballrooms" render={() => <BallroomList notify={notify} />} />
@@ -165,8 +164,6 @@ const App = ({
     </Container>
   )
 }
-
-//         {' <'}{user.username}> logged in {' - '}Date: {getCurrentDate()}{' - '}
 
 const mapStateToProps = (state) => {
   return {
