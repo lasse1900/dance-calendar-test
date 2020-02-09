@@ -33,6 +33,11 @@ app.use('/api/videos', videosRouter)
 app.use('/api/calendars', calendarsRouter)
 app.use('/api/users', usersRouter)
 app.use('/api/login', loginRouter)
+
+app.get('/', function(req, res){
+  res.sendFile('index.html')
+})
+
 app.use(middleware.unknownEndpoint)
 app.use(middleware.errorHandler)
 
