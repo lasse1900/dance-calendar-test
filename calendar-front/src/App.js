@@ -140,7 +140,7 @@ const App = ({
           <NavLink to="/schools" data-cy="schools" className="Nav_link" activeClassName="activeRoute" activeStyle={{ color: 'red' }} > schools{'  '} </NavLink>
           <NavLink to="/videos" data-cy="vidoes" className="Nav_link" activeClassName="activeRoute" activeStyle={{ color: 'red' }} > videos{'  '} </NavLink>
           <NavLink to="/calendars" data-cy="calendars" className="Nav_link" activeClassName="activeRoute" activeStyle={{ color: 'red' }} > calendars{'  '} </NavLink>
-          <button className="ui right floated mini button" data-cy="logout" onClick={handleLogout}>logout</button>
+          <button className="ui mini button" data-cy="logout" onClick={handleLogout}>logout</button>
         </div>
 
         <Notification />
