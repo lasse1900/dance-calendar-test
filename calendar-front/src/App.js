@@ -83,7 +83,7 @@ const App = ({
 
   useEffect(() => {
     if (user) {
-      history.push('/ballrooms')
+      history.push('/home')
     }
   }, [user])
 
